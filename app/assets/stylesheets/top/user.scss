@@ -1,40 +1,71 @@
-.AccountPage {
-  width: 980px;
-  margin: 60px auto;
-  padding: 60px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+.myheader {
+  height: 100px;
   display: flex;
-  justify-content: space-between;
+  &__title {
+    width: 50vw;
+    padding: 15px 60px 0px 60px;
+  }
+  &__category {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &__login, &__create, &__logout, &__mypage {
+      display: flex;
+      padding: 0px 0px 0px 40px;
+      .link {
+        color: #3f312b;
+        text-decoration: none;
+      }
+    }
+  }
 }
-.AccountPage__title {
-  width: 50%;
-  font-size: 14px;
-  font-weight: 200;
 
-  h2 {
-    margin-bottom: 10px;
-    letter-spacing: 3px;
-    font-size: 40px;
+
+.AccountPage {
+  background-color: #fff8dc;
+  display: flex;
+  justify-content: space-around;
+  &__box {
+    width: 800px;
+    height: 600px;
+    margin: 60px auto;
+    padding: 60px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+}
+.AccountPage__top {
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__title {
+    font-size: 20px;
+    font-weight: 200;
+    color: #3f312b;
     &:after {
       content: "";
       display: block;
       width: 60px;
       margin-top: 5px;
-      border-bottom: 1px solid #38aef0;
+  
     }
-  }
-
-  .Button {
-    margin-top: 40px;
-    color: #fff;
-    background-color: #ccc;
+  
+    .Button {
+      margin-top: 40px;
+      color: #fff;
+      background-color: #ccc;
+    }
   }
 }
 
+
 .AccountPage__form {
   width: 50%;
+  margin: 0 auto;
 }
 
 .FormField {
@@ -44,6 +75,7 @@
     letter-spacing: 1px;
     font-size: 14px;
     font-weight: 200;
+    color: #3f312b;
     i {
       font-size: 11px;
     }
@@ -92,8 +124,9 @@
 .UserButton {
   margin-top: 20px;
   color: #fff;
-  background-color: #38aef0;
+  background-color: #3f312b;
 }
+
 
 #error_explanation {
   margin: 20px 0;
@@ -118,4 +151,21 @@
     padding: 0;
     font-size: 13px;
   }
+}
+
+.mypage {
+  height: 600px;
+  background-color: #fff8dc;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.btn {
+  width: 300px;
+  height: 300px;
+  margin-top: 40px;
+  color: #3f312b;
+  background-color: white;
+  text-decoration: none;
+  text-align: center;
 }
