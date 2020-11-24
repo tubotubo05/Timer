@@ -1,0 +1,171 @@
+.myheader {
+  height: 100px;
+  display: flex;
+  &__title {
+    width: 50vw;
+    padding: 15px 60px 0px 60px;
+  }
+  &__category {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &__login, &__create, &__logout, &__mypage {
+      display: flex;
+      padding: 0px 0px 0px 40px;
+      .link {
+        color: #3f312b;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+.AccountPage {
+  background-color: #fff8dc;
+  display: flex;
+  justify-content: space-around;
+  &__box {
+    width: 800px;
+    height: 600px;
+    margin: 60px auto;
+    padding: 60px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+}
+.AccountPage__top {
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__title {
+    font-size: 20px;
+    font-weight: 200;
+    color: #3f312b;
+    &:after {
+      content: "";
+      display: block;
+      width: 60px;
+      margin-top: 5px;
+  
+    }
+  
+    .Button {
+      margin-top: 40px;
+      color: #fff;
+      background-color: #ccc;
+    }
+  }
+}
+
+
+.AccountPage__form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.FormField {
+  margin-bottom: 10px;
+  &__label--normal {
+    padding: 10px 0;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 200;
+    color: #3f312b;
+    i {
+      font-size: 11px;
+    }
+    .field_with_errors {
+      display: inline-block;
+      color: #d65f4c;
+      font-weight: 400;
+    }
+  }
+  &__input--normal {
+    input {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px;
+      letter-spacing: 1px;
+    }
+    .field_with_errors {
+      position: relative;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 5px;
+        background-color: #d65f4c;
+      }
+    }
+  }
+}
+
+.Button {
+  display: inline-block;
+  height: 50px;
+  padding: 0 30px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.UserButton {
+  margin-top: 20px;
+  color: #fff;
+  background-color: #3f312b;
+}
+
+
+#error_explanation {
+  margin: 20px 0;
+  padding: 20px 30px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+
+  h2 {
+    margin-bottom: 10px;
+    color: #d65f4c;
+    font-size: 14px;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 17px;
+    list-style: square;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+  }
+}
+
+.mypage {
+  height: 600px;
+  background-color: #fff8dc;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.btn {
+  width: 300px;
+  height: 300px;
+  margin-top: 40px;
+  color: #3f312b;
+  background-color: white;
+  text-decoration: none;
+  text-align: center;
+}

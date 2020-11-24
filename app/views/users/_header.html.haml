@@ -1,0 +1,8 @@
+.myheader
+  .myheader__title
+    = link_to image_tag(src="titleicon3.png", size: "150x60"), root_path
+  .myheader__category
+    .myheader__category__edit
+      = link_to image_tag(src="edit.png", size: "80x60"), edit_user_path
+    .myheader__category__logout
+      = link_to image_tag(src="exit.png", size: "80x60"), destroy_user_session_path, method: :delete
