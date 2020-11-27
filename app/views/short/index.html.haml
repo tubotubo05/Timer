@@ -1,5 +1,14 @@
-.content
-  %p#timer 
-#buttonBox.button
-  %button#start
-    START
+.header
+  .header__title
+    = link_to image_tag(src="titleicon3.png", size: "150x60"), root_path
+  .header__right
+    .header__right__mypage
+      = link_to user_path(current_user) , class: "link" do
+        = current_user.name
+    .header__right__logout
+      = link_to image_tag(src="exit.png", size: "80x60"), destroy_user_session_path, method: :delete, class: "link"
+
+.back
+  .container
+    #timer READY
+  #short
