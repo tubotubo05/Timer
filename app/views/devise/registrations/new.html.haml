@@ -1,12 +1,14 @@
 .header
   .header__title
     = link_to image_tag(src="titleicon3.png", size: "150x60"), root_path
+  .header__right
+    .header__right__create
+      = link_to "Log in", new_user_session_path, class: "link"
 .AccountPage
   .AccountPage__box
     .AccountPage__top
       .AccountPage__top__title
         Create Account
-      = render "devise/shared/links"
     .AccountPage__form
       = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
         = devise_error_messages!
